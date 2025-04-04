@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/dialog_background"
+    android:elevation="201dp"
+
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title and Close Icon in the same line at the top -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Dialog Title -->
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="Reminder"
+            android:textAlignment="center"
+            android:textColor="@color/Secondary_Color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Close Icon -->
+        <ImageView
+            android:id="@+id/close_reminder_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-2dp"
+            android:contentDescription="Close Reminder"
+            android:src="@drawable/baseline_close_24" />
+    </LinearLayout>
+
+    <!-- Underline below Title -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#8625D366" />
+
+    <!-- Reminder Message -->
+    <TextView
+        android:id="@+id/reminder_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        android:maxLines="6"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:text="Reminder Message"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Horizontal LinearLayout for Edit and Delete Icons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Edit Icon -->
+        <ImageView
+            android:id="@+id/edit_reminder_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Edit Reminder"
+            android:src="@drawable/baseline_edit_24" />
+
+        <!-- Delete Icon -->
+        <ImageView
+            android:id="@+id/delete_reminder_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Delete Reminder"
+            android:src="@drawable/baseline_delete_outline_24" />
+
+    </LinearLayout>
+
+</LinearLayout>

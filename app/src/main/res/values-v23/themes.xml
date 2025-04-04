@@ -1,0 +1,21 @@
+<resources>
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary and Secondary Colors -->
+        <item name="colorPrimary">@color/Primary_Color</item>
+        <item name="colorSecondary">@color/Secondary_Color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Transparent Bars -->
+        <item name="android:statusBarColor">@color/Secondary_Color</item>
+        <item name="android:navigationBarColor">@color/Secondary_Color</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="timePickerBlack">
+        <item name="android:textColorPrimary">@color/black</item> <!-- color for digits -->
+        <item name="android:textColor">@color/black</item> <!-- color for colon -->
+        <item name="android:colorControlNormal">@color/black</item> <!-- color for (horizontal) delimeters -->
+    </style>
+</resources>

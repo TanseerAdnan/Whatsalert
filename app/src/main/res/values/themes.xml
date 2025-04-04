@@ -1,0 +1,24 @@
+<resources>
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary and Secondary Colors -->
+        <item name="colorPrimary">@color/Primary_Color</item>
+        <item name="colorSecondary">@color/Secondary_Color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Transparent Bars -->
+        <item name="android:statusBarColor">@color/Primary_Color</item>
+        <item name="android:navigationBarColor">@color/Primary_Color</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Default Button Style -->
+        <item name="buttonStyle">@style/CustomButton</item>
+    </style>
+
+    <!-- Custom Button -->
+    <style name="CustomButton" parent="Widget.Material3.Button">
+
+        <item name="backgroundTint">@color/Primary_Color</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

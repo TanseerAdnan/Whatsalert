@@ -1,0 +1,110 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:padding="16dp">
+
+    <!-- Edit Reminder Heading and Close Icon in Horizontal Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical">
+
+        <!-- Edit Reminder Heading -->
+        <TextView
+            android:id="@+id/edit_reminder_heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EDIT REMINDER"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/Secondary_Color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Close Icon -->
+        <ImageView
+            android:id="@+id/close_reminder_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_close_24"
+            android:layout_gravity="end"
+            android:contentDescription="Close" />
+    </LinearLayout>
+    <!-- Underline below Title -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#8625D366"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp" />
+    <!-- Time and Date in a Horizontal layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/reminder_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="TIME"
+            android:textColor="@color/Secondary_Color"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/reminder_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="DATE"
+            android:textColor="@color/Secondary_Color"
+            android:textStyle="bold"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Contact below Time and Date -->
+    <TextView
+        android:id="@+id/reminder_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="CONTACT"
+        android:textColor="@color/Secondary_Color"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <!-- Scrollable Edit Message -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/reminder_message_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit message"
+            android:textColorHint="@color/gray"
+            android:padding="8dp"
+            android:maxHeight="200dp" /> <!-- Optional: Restrict maximum height for EditText -->
+    </ScrollView>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

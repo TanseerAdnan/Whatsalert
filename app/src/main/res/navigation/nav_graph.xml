@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.whatsalert.Fragments.HomeFragment"
+        android:label="                    "
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_ReminderFragment"
+            app:destination="@id/ReminderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ReminderFragment"
+        android:name="com.example.whatsalert.Fragments.ReminderFragment"
+        android:label="            "
+        tools:layout="@layout/fragment_reminder">
+
+        <action
+            android:id="@+id/action_ReminderFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+</navigation>
